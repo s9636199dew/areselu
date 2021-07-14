@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage ('deploy'){
             environment{
-                credentials=('awsfile')
+                awsfile=credentials('awsfile')
             }
            steps {
         sh '''
