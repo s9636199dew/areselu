@@ -1,6 +1,6 @@
 pipeline{
     agent any
-    stges{
+    stages{
         stage ('deploy'){
             environment{
                 credentials=('awsfile')
@@ -16,4 +16,3 @@ pipeline{
            }
         }
     }
-}
